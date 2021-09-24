@@ -1,9 +1,9 @@
 # Sentiment-Analysis
-##Analysis of parent comments clusters with an anomalous sarcastic response
+## Analysis of parent comments clusters with an anomalous sarcastic response
 
 The Sarcasm on Reddit dataset provides comments posted on Reddit labeled as sarcastic (1) or not sarcastic (0). The project goal is, given only the parent comment in a specific subreddit, identify parent comment clusters that receive an amount of sarcastic comments that deviate from the subreddit average. The project then focuses on document clustering, topic detection, and keyword ex- traction.
 
-###References
+### References
 • Dimo Angelov, Top2Vec: Distributed Representations of Topics, [link](https://arxiv.org/abs/2008.09470)
 
 • Grootendorst Maarten, BERTopic, [link](https://github.com/MaartenGr/BERTopic)
