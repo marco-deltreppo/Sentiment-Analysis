@@ -15,3 +15,7 @@ The Sarcasm on Reddit dataset provides comments posted on Reddit labeled as sarc
 • McInnes, L, Healy, J, UMAP: Uniform Manifold Approximation and Pro- jection for Dimension Reduction, [link](https://arxiv.org/abs/1802.03426)
 
 • Universal Sentence Encoder, [link](https://arxiv.org/abs/1803.11175)
+
+### Research question and methodology
+The research question is whether it is possible to identify parent comment clus- ters in which the mean of sarcastic responses exceeds the subreddit mean. 
+The methodology is based on the references cited. In order to work with textual data, parent comments are transformed into vectors using the Universal Sentence Encoder. Then with UMAP the dimensionality of the data is reduced from 512 dimensions to just 5 dimensions. The reason for the reduction is to be able to use HDBSCAN as a clustering algorithm. Once the clusters are identified, the intra-cluster mean of the label variable is calculated to identify the clusters with the most sarcastic responses and consequently the topics that attract the most sarcastic responses.
